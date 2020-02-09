@@ -3,6 +3,10 @@ A small Debian machine to run moodle and docker moodle in.
 It currently only installs docker and enables the users "mathias" and
 "paola" to access it directly. The actual Moodle setup is an exercise.
 
+To enable dyndns you must manually create a file /etc/dynuddns.conf
+setting DYNUDDNS_HOSTNAME and DYNUDDNS_PASSWORD.
+
 Contents:
 - create.sh: create an instance with name $1
 - startup.sh: the startup script run in the new instance
+- update-startup.sh: deploys startup.sh to the instance
